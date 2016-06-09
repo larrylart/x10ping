@@ -1,0 +1,3 @@
+
+ x10ping is an application used to power cycle network devices based on their ping (ICMP echo) status.
+ Currently the following X10 hardware is supported: CM11A/C12U, JDS Startgate/TimeCommander/TimeCommnader-Plus and also any device supported by ActiveHome Interface (CM15, CM19A, VT37A, etc). However, you will need to have ActiveHome installed if you plan to use any of the cm15-etc enumerated above. 

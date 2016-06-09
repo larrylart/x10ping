@@ -1,0 +1,46 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (374fb4cd).
+//
+// ahscript.tli
+//
+// Wrapper implementations for Win32 type library c:\\program files\\common files\\x10\\common\\ahscript.dll
+// compiler-generated file created 02/16/07 at 13:47:56 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _IActiveHomeEvents wrapper method implementations
+//
+
+inline HRESULT _IActiveHomeEvents::RecvAction ( const _variant_t & bszAction, const _variant_t & bszParm1, const _variant_t & bszParm2, const _variant_t & bszParm3, const _variant_t & bszParm4, const _variant_t & bszParm5, const _variant_t & bszReserved ) {
+    HRESULT _hr = raw_RecvAction(bszAction, bszParm1, bszParm2, bszParm3, bszParm4, bszParm5, bszReserved);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface _DIActiveHomeEvents wrapper method implementations
+//
+
+inline HRESULT _DIActiveHomeEvents::RecvAction ( const _variant_t & bszAction, const _variant_t & bszParm1, const _variant_t & bszParm2, const _variant_t & bszParm3, const _variant_t & bszParm4, const _variant_t & bszParm5, const _variant_t & bszReserved ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x0, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x000c\x000c\x000c\x000c\x000c\x000c\x000c", &bszAction, &bszParm1, &bszParm2, &bszParm3, &bszParm4, &bszParm5, &bszReserved);
+    return _result;
+}
+
+//
+// interface IActiveHome wrapper method implementations
+//
+
+inline _variant_t IActiveHome::SendAction ( const _variant_t & bszAction, const _variant_t & bstrParam, const _variant_t & vReserved1, const _variant_t & vReserved2 ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_SendAction(bszAction, bstrParam, vReserved1, vReserved2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IActiveHome::PutOnRecvAction ( IDispatch * _arg1 ) {
+    HRESULT _hr = put_OnRecvAction(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
