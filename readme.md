@@ -1,5 +1,5 @@
 
-What is x10ping and why use it?
+# What is x10ping and why use it?
 
  Have you ever had a network device such as a router, DSL modem, pc, etc. which will hang every now and then and the only way to get it up and running again was to powercycle it? To make it worst it happens when you are away ?
 Then x10ping is your answer. With this application you will also need an 
@@ -9,13 +9,13 @@ X10 controller such as CM11A(US)/CM12U(Europe) and x10 appliances  as needed.
 when found down over a period of time powercycle them. It's a light application
 with a GUI interface and logging capabilities which just does the job.
 
-Get started:
+## Get started:
 
    Download the binary installation package from here and install it. Currently supported platforms are Windows 98, 2000 and XP. It could works on other windows distributions however I didn't test on it. Also the source code is written platform independent (with wxWidgets) and could probably be compiled on other platforms such as Linux and MacOS, exception CPing class that will have to be re-written.
 
 After you completed the installation, start the x10ping application.
 
-Configuration:
+## Configuration:
 
 1 . First, set on which serial port is your X10 controller installed. To do this go to File->Config and there in the first tab(X10) you will find a select option labelled "X10 Serial Port Number:". There chose your serial port number. Once you press "OK" in config windows you should see a message in the logs saying that port was opened successfully. Else, check you serial port configuration.
 
@@ -77,7 +77,7 @@ install folder, ie "c:\Program Files\x10ping\". There are two files:
    LastKnownNetDeviceState=4
 
 
-Known bugs:
+## Known bugs:
 
    There are no known bugs at the moment. However, if you find any please send them to me at i@larryo.org. Any suggestions on how to improve this application are also welcome. 
 
